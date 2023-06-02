@@ -1,0 +1,34 @@
+/* feed him eggs message*/
+#feedHimEggsMessage {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Arial", Arial;
+    font-weight: bold;
+  }
+
+/*Image of egg man*/
+#characterContainer img{
+  width: 220px;
+  height: 250px;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+/*Image of egg basket*/
+#basketContainer img{
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  top: 60%;
+  left: 70%;
+}
+
+.egg {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  /*pointer-events: none; /* Prevent the egg from capturing mouse events */
+}
