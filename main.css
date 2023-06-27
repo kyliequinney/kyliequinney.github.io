@@ -1,23 +1,104 @@
 body {
-	background:#789;
+	background: var(--third-color);
 	font-family: arial;
 }
 
 p {
 
 }
+/*my website color palette*/
+:root {
+	/*dark blue*/
+	--first-color: #394a51; 
+	
+	/*light blue*/
+	--second-color: #7fa99b; 
+
+	/*sand*/
+	--third-color: #fbf2d5; 
+
+	/*light orange*/
+	--fourth-color: #fdc57b; 
+	/*--button {
+        background-color: #1c87c9;
+        border: none;
+        color: white;
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }*/
+}
 
 .secondary {
-	background: lightgray;
+	background: var(--fourth-color);
 	font-family: cursive;
 }
 
-h1,h2,h3 {
-	background: lightcoral;
+h1{
+	background: var(--second-color);
 	padding: 10px 10px 10px 10px;
 	color: black;
+	text-align: center;
+}
+h2,h3 {
+	font-family: "Marker Felt", fantasy;
+	background: var(--fourth-color);
+	padding: 10px 10px;
+	margin: 30px 200px;
+	color: black;
+	text-align: center;
 }
 
+.blerp {
+	display: inline-block;
+	width: 277.5px;
+	height: 370px;
+	margin-right: 20px;
+	background: var(--first-color);
+	border-radius: 35px;
+	vertical-align: top;
+	padding: 15px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.blerpImage {
+	display: inline-block;
+	width: 300px;
+	height: 400px;
+	margin-right: 20px;
+	object-fit: cover;
+	background-size: cover;
+	background-position: center;
+	border-radius: 35px;
+	vertical-align: top;
+}
+
+.blerpText {
+	font-size:20px;
+	color: var(--fourth-color);
+	text-align: center;
+	line-height: 2;
+	white-space: pre-wrap;
+}
+/*link general*/
 a {
-	color: peachpuff;
+	text-decoration: none; /*this removes the line under the link*/
+}
+
+/*unvisited link*/
+a:link {
+	color: var(--second-color);
+}
+
+a:visited {
+	color: var(--second-color);
+}
+
+a:hover{
+	color: var(--fourth-color);
 }
