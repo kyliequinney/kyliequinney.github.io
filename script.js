@@ -5,14 +5,14 @@ feedHimEggsMessage.style.color = "red";
 
 // Image of egg man
 var characterImage = document.createElement("img");
-characterImage.src = "eggMan.png";
+characterImage.src = "eggFile/eggMan.png";
 
 var characterContainer = document.getElementById("characterContainer");
 characterContainer.appendChild(characterImage);
 
 // Image of egg basket
 var basketImage = document.createElement("img");
-basketImage.src = "eggBasket.jpeg";
+basketImage.src = "eggFile/eggBasket.jpeg";
 
 var basketContainer = document.getElementById("basketContainer");
 basketContainer.appendChild(basketImage);
@@ -27,7 +27,7 @@ var isDragging = false;
 basketContainer.addEventListener("mousedown", function (event) {
     // Create egg element
     var newEggImage = document.createElement("img");
-    newEggImage.src = "egg.jpeg";
+    newEggImage.src = "eggFile/egg.jpeg";
     newEggImage.className = "egg";
     newEggImage.style.left = event.clientX + "px";
     newEggImage.style.top = event.clientY + "px";
