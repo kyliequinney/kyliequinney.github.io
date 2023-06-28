@@ -54,16 +54,19 @@ h2,h3 {
 }
 
 .blerp {
-	display: inline-block;
-	width: 277.5px;
-	height: 370px;
-	margin-right: 20px;
+	align-items: center;
 	background: var(--first-color);
 	border-radius: 35px;
-	vertical-align: top;
-	padding: 15px;
+	display: inline-block;
+	height: 370px;
+	justify-content: center;
+	margin-bottom: 20px;
+	margin-right: 20px;
 	overflow: hidden;
+	padding: 15px;
 	text-align: center;
+	vertical-align: top;
+	width: 277.5px;
 }
 
 .blerpImage {
@@ -71,6 +74,7 @@ h2,h3 {
 	width: 300px;
 	height: 400px;
 	margin-right: 20px;
+	margin-bottom: 20px;
 	object-fit: cover;
 	background-size: cover;
 	background-position: center;
@@ -85,6 +89,34 @@ h2,h3 {
 	line-height: 2;
 	white-space: pre-wrap;
 }
+
+.video-wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: translateY(-15%);
+}
+
+/*MAXES CHART*/
+.maxes-chart {
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+.maxes-chart th, .maxes-chart td {
+	border: 1.5px solid var(--first-color);
+	padding: 10px;
+	text-align: left;
+  }
+  
+.maxes-chart th {
+	background-color: var(--second-color);
+  }
+  
+.maxes-chart tbody tr:nth-child(even) {
+	background-color: var(--fourth-color);
+  }
+  
 /*link general*/
 a {
 	text-decoration: none; /*this removes the line under the link*/
