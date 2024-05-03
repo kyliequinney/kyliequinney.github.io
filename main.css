@@ -41,7 +41,7 @@ h1{
 	color: black;
 	text-align: center;
 }
-h2,h3 {
+h2 {
 	font-family: "Marker Felt", fantasy;
 	background: var(--fourth-color);
 	padding: 10px 10px;
@@ -130,4 +130,80 @@ a:visited {
 
 a:hover{
 	color: var(--fourth-color);
+}
+
+/*timeline stuff*/
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.container{
+    padding: 10px 0px;
+    position: relative;
+    width: 50%;
+}
+.text-box{
+    padding: 10px 20px;
+    background: #fdc57b;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.left-container{
+    left: 0;
+}
+.right-container{
+    left: 50%;
+}
+.container img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+.right-container img{
+    left: -20px;
+}
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #394a51;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+.text-box h3{
+    font-weight: 600;
+}
+.text-box small{
+    display: block;
+    margin-bottom: 15px;
+}
+.left-container-arrow{
+	height: 0;
+	width: 0;
+	position: absolute;
+	top: 28px;
+	z-index: 1;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-left: 15px solid #fdc57b;
+	right: -15px;
+}
+.right-container-arrow{
+	height: 0;
+	width: 0;
+	position: absolute;
+	top: 28px;
+	z-index: 1;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-right: 15px solid #fdc57b;
+	left: -15px;
 }

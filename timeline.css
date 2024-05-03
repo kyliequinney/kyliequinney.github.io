@@ -4,8 +4,39 @@
     font-family: arial;
     box-sizing: border-box;
 }
+h1{
+	background: var(--second-color);
+	padding: 10px 10px 10px 10px;
+	color: black;
+	text-align: center;
+}
+h2 {
+	font-family: "Marker Felt", fantasy;
+	background: var(--fourth-color);
+	padding: 10px 10px;
+	margin: 30px 200px;
+	color: black;
+	text-align: center;
+}
 body{
     background: #fbf2d5;
+}
+/*link general*/
+a {
+	text-decoration: none; /*this removes the line under the link*/
+}
+
+/*unvisited link*/
+a:link {
+	color: var(--second-color);
+}
+
+a:visited {
+	color: var(--second-color);
+}
+
+a:hover{
+	color: var(--fourth-color);
 }
 .timeline{
     position: relative;
@@ -51,4 +82,11 @@ body{
     left: 50%;
     margin-left: -3px;
     z-index: -1;
+}
+.text-box h2{
+    font-weight: 600;
+}
+.text-box small{
+    display: block;
+    margin-bottom: 15px;
 }
