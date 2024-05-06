@@ -137,35 +137,39 @@ a:hover{
     position: relative;
     max-width: 1200px;
     margin: 100px auto;
+	padding: 10px 40px;
 }
 .container{
     padding: 10px 0px;
     position: relative;
-    width: 50%;
+    width:45%;
 }
 .text-box{
     padding: 10px 20px;
     background: #fdc57b;
-    position: relative;
+    position: center;
     border-radius: 6px;
     font-size: 15px;
 }
 .left-container{
+	width: 45%;
+	padding: 10px 0px;
     left: 0;
 }
 .right-container{
-    left: 50%;
+	padding: 10px 20px;
+    left: 53%;
 }
 .container img{
     position: absolute;
     width: 40px;
-    border-radius: 50%;
-    right: -20px;
+    border-radius: 0%;
+    right: -60px;
     top: 32px;
     z-index: 10;
 }
 .right-container img{
-    left: -20px;
+    left: -50px;
 }
 .timeline::after{
     content: '';
@@ -205,5 +209,5 @@ a:hover{
 	border-top: 15px solid transparent;
 	border-bottom: 15px solid transparent;
 	border-right: 15px solid #fdc57b;
-	left: -15px;
+	left: 5px;
 }
