@@ -5,5 +5,4 @@ Notes (for myself):
   Books to add to book review timeline:
       The Westing Game
       The Grace Year
-      3 Body Problem
-      Fahrenheit 451
+      
